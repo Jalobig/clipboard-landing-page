@@ -1,0 +1,17 @@
+.button {
+  color: white;
+  padding: 0.75rem 2rem;
+  font-family: inherit;
+  border-radius: 2rem;
+  transition: all 0.3s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  &__accent {
+    background-color: var(--color-secondary);
+  }
+  &__primary {
+    background-color: var(--color-primary);
+  }
+}

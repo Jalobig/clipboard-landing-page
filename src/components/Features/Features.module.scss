@@ -1,0 +1,43 @@
+.features {
+  &__group {
+    max-width: 43.75rem;
+    text-align: center;
+    margin: auto;
+  }
+  &__row {
+      margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    max-width: 90rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    margin-right: 7.25rem;
+    &2{
+        display: block;
+        margin: auto;
+    }
+  }
+  &__feature {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+  &__title {
+    margin-bottom: 1rem;
+    color: var(--color-grey-dark);
+  }
+  &__text {
+    width: 21.25rem;
+    line-height: 1.5;
+    color: var(--color-grey);
+  }
+}
+
+.mb{
+    &__medium{
+        margin-bottom: 5rem;
+    }
+}
