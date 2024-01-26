@@ -4,6 +4,7 @@ import classes from "./Footer.module.scss";
 const Footer = () => {
   return (
     <footer className={classes.footer}>
+      
       <p className={classes.attribution}>
         Challenge by{" "}
         <a

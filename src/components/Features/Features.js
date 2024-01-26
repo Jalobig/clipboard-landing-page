@@ -4,6 +4,9 @@ import H2 from "../H2/H2";
 import Text from "../Text/Text";
 import MacbookDesktop from "../../images/image-computer.png";
 import ImgDevices from "../../images/image-devices.png";
+import IconBlacklist from "../../images/icon-blacklist.svg";
+import IconText from "../../images/icon-text.svg";
+import IconPreview from "../../images/icon-preview.svg";
 
 const Features = () => {
   return (
@@ -53,11 +56,52 @@ const Features = () => {
         </Text>
       </div>
       <img src={ImgDevices} alt="Devices" className={classes.features__img2} />
-      <div className={`${classes.features__group} ${classes.mb__medium}`}>
+      <div className={`${classes.features__group}`}>
         <H2>Supercharge your workflow</H2>
         <Text>We’ve got the tools to boost your productivity.</Text>
       </div>
-      
+      <div className={classes.features__elements}>
+        <div className={classes.features__element}>
+          <img
+            src={IconBlacklist}
+            alt="Icon Blacklist"
+            className={classes["features__element--img"]}
+          />
+          <h3 className={classes["features__element--heading"]}>
+            Create blacklists
+          </h3>
+          <p className={classes["features__element--small-text"]}>
+            Ensure sensitive information never makes its way to your clipboard
+            by excluding certain sources.
+          </p>
+        </div>
+        <div className={classes.features__element}>
+          <img
+            src={IconText}
+            alt="Icon Text"
+            className={classes["features__element--img"]}
+          />
+          <h3 className={classes["features__element--heading"]}>
+            Plain text snippets
+          </h3>
+          <p className={classes["features__element--small-text"]}>
+            Remove unwanted formatting from copied text for a consistent look.
+          </p>
+        </div>
+        <div className={classes.features__element}>
+          <img
+            src={IconPreview}
+            alt="Icon Preview"
+            className={classes["features__element--img"]}
+          />
+          <h3 className={classes["features__element--heading"]}>
+            Sneak preview
+          </h3>
+          <p className={classes["features__element--small-text"]}>
+            Quick preview of all snippets on your Clipboard for easy access.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
